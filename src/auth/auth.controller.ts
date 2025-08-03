@@ -8,9 +8,9 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { LocalAuthGuard } from './local-auth.guard'; // You'll create this
-import { ApiTags, ApiBearerAuth, ApiBody } from '@nestjs/swagger';
-import { LoginDto } from './dto/login.dto'; // Create DTOs
+import { LocalAuthGuard } from './local-auth.guard';
+import { ApiTags, ApiBody } from '@nestjs/swagger';
+import { LoginDto } from './dto/login.dto';
 import { RefreshTokenDto } from './dto/refresh-token.dto';
 
 @ApiTags('auth')

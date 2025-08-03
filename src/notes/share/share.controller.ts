@@ -15,7 +15,7 @@ import { ShareService } from './share.service';
 import { CreateShareDto } from './dto/create-share.dto';
 import { ApiTags, ApiBearerAuth } from '@nestjs/swagger';
 import { JwtAuthGuard } from '../../auth/jwt-auth.guard';
-import { Public } from '../../auth/public.decorator'; // Create for public routes
+import { Public } from '../../auth/public.decorator';
 
 @ApiTags('notes')
 @Controller('notes')
