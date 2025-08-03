@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
 import { PrismaClient } from '@prisma/client';
 import * as bcrypt from 'bcrypt';
 
@@ -30,4 +31,4 @@ main()
   })
   .finally(async () => {
     await prisma.$disconnect();
-  });
+  })
